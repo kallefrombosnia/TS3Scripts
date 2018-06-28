@@ -61,8 +61,8 @@ function onTextMessage(TeamSpeak3_Adapter_ServerQuery_Event $event, TeamSpeak3_N
 
     if($info["targetmode"] == 2)
     {
-		//tnx hASVAN for this part 
-		$mystring = $info["msg"];
+		
+	$mystring = $info["msg"];
         $pos1 = strpos($mystring, " ");
 
         if($pos1 > 0)
