@@ -1,4 +1,10 @@
 <?php
+/*
+	 Name: Subchannel creator script with command !wn <name>
+	 Author: kalle
+	 Version: v1.0	
+*/
+
 $login_name = 'serveradmin';  	//query login info
 $login_password = 'rgDRpNLR'; 	// =||=
 $ip = 'localhost';            	//ex. 127.0.0.1/ 254.13.121.12 
@@ -7,6 +13,7 @@ $virtualserver_port = '9987'; 	//default 9987
 $bot_name = 'some special shit';          	//bot name
 $channelid = "1";       	//Channel where is bot going to  NOTE: Dont make this default channel. If you put default channel delete $ts3_VirtualServer->clientMove($ts3_id_bota, $channelid);
 $cadmin = '5';                 // Channel admin id
+
 
 //FRAMEWORK
 $filename = 'library/TeamSpeak3/TeamSpeak3.php';
@@ -68,7 +75,7 @@ function onTextMessage(TeamSpeak3_Adapter_ServerQuery_Event $event, TeamSpeak3_N
         }
 
 
-    	if($rijec == "!wn")
+    	if($rijec == '!wn')
         {
         	$name = str_replace('!wn ','', $info["msg"]);
             $createsub = $srv->channelCreate(array(
