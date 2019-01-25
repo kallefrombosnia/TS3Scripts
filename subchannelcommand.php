@@ -1,8 +1,11 @@
 <?php
+
 /*
-	 Name: Subchannel creator script with command !wn <name>
-	 Author: kalle
-	 Version: v1.0	
+    Name: Subchannel creator script with command !wn <name>
+    Author: kalle
+    Version: v1.0	
+
+    Description: //
 */
 
 $login_name = 'serveradmin';  	//query login info
